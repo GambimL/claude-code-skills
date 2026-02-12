@@ -1,0 +1,16 @@
+{
+    "log_group_id": "ocid1.loggroup.oc1.<region>.YOUR_LOG_GROUP_OCID",
+    "log_id": "ocid1.log.oc1.<region>.YOUR_LOG_OCID",
+    "project_id": "ocid1.project.oc1.<region>.YOUR_PROJECT_OCID",
+    "compartment_id": "ocid1.compartment.oc1..YOUR_COMPARTMENT_OCID",
+    "shape": "VM.Standard.E3.Flex",
+    "storange_mount": {
+        "src": "oci://<bucket-name>@<namespace>",
+        "dest": "/home/datascience/<mount-directory>"
+    },
+    "custom_conda": "oci://<bucket>@<namespace>/conda_environments/<platform>/<env-name>/<version>/<slug>",
+    "environment_variables": {
+        "MY_VAR_1": "value-1",
+        "MY_VAR_2": "value-2"
+    }
+}
